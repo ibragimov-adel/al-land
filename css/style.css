@@ -33,7 +33,7 @@ ul {
 
 .header {
     padding: 20px 0;
-    background-image: url('/img/header_bg.png');
+    background-image: url('../img/header_bg.png');
     border-bottom: 5px solid #E31E24;
 }
 
@@ -224,7 +224,7 @@ ul {
 }
 
 .footer {
-    background-image: url('/img/footer_bg.png');
+    background-image: url('../img/footer_bg.png');
     color: #FFFFFF;
 }
 
