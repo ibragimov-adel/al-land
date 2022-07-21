@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Alaskan</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="img/logo.png" alt="Alaskan">
+                    </a>
+                </div>
+                <div class="header__logo_sm">
+                    <a href="/">
+                        <img src="img/header_ati_logo.png" alt="Alaskan Temperature Index">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="wears">
+                <div class="wears__container container">
+                    <div class="wears__row">
+                        <div class="wears__col">
+                            <div class="wears__list list-wears">
+                                <div class="list-wears__header">Костюмы</div>
+                                <ul class="list-wears__list" id="suit-list"></ul>
+                            </div>
+                        </div>
+
+                        <div class="wears__col">
+                            <div class="wears__list list-wears">
+                                <div class="list-wears__header">Флис</div>
+                                <ul class="list-wears__list" id="fleece-list"></ul>
+                            </div>
+                        </div>
+
+                        <div class="wears__col">
+                            <div class="wears__list list-wears">
+                                <div class="list-wears__header">Термобелье</div>
+                                <ul class="list-wears__list" id="underwear-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ati">
+                <div class="ati__container container">
+                    <div class="ati__row">
+                        <div class="ati__col_therm">
+                            <img src="img/therm.png" alt="">
+<!--                            <div class="ati__therm">-->
+<!--                                <div class="therm" id="therm">-->
+<!--                                    <div class="therm__values">-->
+<!--                                    </div>-->
+<!--                                    <div class="therm__line">-->
+<!--                                        <span class="gray"></span>-->
+<!--                                        <span class="main"></span>-->
+<!--                                    </div>-->
+<!--                                    <div class="therm__values2">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                        </div>
+                        <div class="ati__col_temp">
+                            <div class="ati__temp">
+                                <div class="ati__temp-key">
+                                    <span>Alaskan</span>
+                                    <br>
+                                    <span>Temperature</span>
+                                    <br>
+                                    <span>Index</span>
+                                </div>
+                                <div class="ati__temp-eq">=</div>
+                                <div class="ati__temp-value" id="ati">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="choice">
+                <div class="container choice__container">
+                    <div class="choice__title-wrapper">
+                        <h2 class="choice__title">Ваш выбор</h2>
+                    </div>
+                    <div class="choice__row">
+
+                        <div class="choice__col">
+                            <div class="choice__card card" id="suit-card">
+                                <div class="card__title">Костюм</div>
+                                <div class="card__name">-</div>
+                                <div class="card__ati">/ -</div>
+                                <div class="card__description">описание описание описание описание описание описание
+                                    описание описание описание описание описание описание описание описание описание
+                                    описание описание описание описание описание
+                                </div>
+                                <a href="#" class="card__link">подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="choice__col">
+                            <div class="choice__card card" id="fleece-card">
+                                <div class="card__title">Флис</div>
+                                <div class="card__name">-</div>
+                                <div class="card__ati">/ -</div>
+                                <div class="card__description">описание описание описание описание описание описание
+                                    описание описание описание описание описание описание описание описание описание
+                                    описание описание описание описание описание
+                                </div>
+                                <a href="#" class="card__link">подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="choice__col">
+                            <div class="choice__card card" id="underwear-card">
+                                <div class="card__title">Термобелье</div>
+                                <div class="card__name">-</div>
+                                <div class="card__ati">/ -</div>
+                                <div class="card__description">описание описание описание описание описание описание
+                                    описание описание описание описание описание описание описание описание описание
+                                    описание описание описание описание описание
+                                </div>
+                                <a href="#" class="card__link">подробнее</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__container container">
+                    <div class="footer__text">
+                        *Все расчеты сделаны исходя из средних климатических норм и параметров человека
+                    </div>
+                    <div class="footer__text">
+                        **Комфортная температура воздуха для выбранного комплекта одежды <span>Alaskan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__container container">
+                    <div class="footer__row">
+                        <div class="footer__col">
+                            <div class="footer__logo">
+                                <img src="img/circle_logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__content">
+                                Телефон: 8 800 333-22-22
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__content">
+                                Почта: mail@mail.ru
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__content">
+                                Сайт: alaskanwear.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

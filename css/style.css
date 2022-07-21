@@ -1,0 +1,311 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'AGLetterica';
+    src: url("/fonts/AGLettericaExtra.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 130%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1760px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.header {
+    padding: 20px 0;
+    background-image: url('/img/header_bg.png');
+    border-bottom: 5px solid #E31E24;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 240px;
+}
+
+.header__logo_sm {
+    max-width: 195px;
+}
+
+.main {
+    padding: 60px 0;
+}
+
+.wears {
+    margin-bottom: 80px;
+}
+
+.wears__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wears__col {
+    width: 33.3%;
+    padding: 0 20px;
+}
+
+.wears__list {
+    max-width: 390px;
+    margin: auto;
+}
+
+.list-wears {}
+
+.list-wears__header {
+    background: rgb(227,30,36);
+    background: linear-gradient(90deg, rgba(227,30,36,1) 0%, rgba(255,201,203,1) 16%, rgba(227,30,36,1) 100%);
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, .5);
+    margin-bottom: 5px;
+}
+
+.list-wears__list {}
+
+.list-wears__list li {
+    border: 1px solid rgba(0, 0, 0, .5);
+    padding: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.list-wears__list li.active {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.list-wears__list li:not(.active):hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.ati {
+    margin-bottom: 80px;
+}
+
+.ati__row {
+    display: flex;
+    align-items: center;
+}
+
+.ati__col_therm {
+    flex: 1;
+    padding-right: 120px;
+    position: relative;
+}
+
+.ati__col_therm img {
+    max-width: 960px;
+}
+
+.ati__col_temp {
+}
+
+.ati__temp {
+    display: flex;
+    align-items: center;
+    color: #E31E24;
+}
+
+.ati__temp-key {
+    font-size: 24px;
+    text-align: end;
+}
+
+.ati__temp-eq {
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+.ati__temp-value {
+    font-size: 96px;
+    font-weight: bold;
+    width: 210px;
+}
+
+.choice__title-wrapper {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.choice__title-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    z-index: 0;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    background-color: #E31E24;
+    display: block;
+}
+
+.choice__title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 0 60px;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+.choice__row {
+    display: flex;
+}
+
+.choice__col {
+    width: 33.3%;
+    padding: 0 100px;
+}
+
+.card {}
+
+.card__title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.card__name {
+    font-size: 20px;
+    color: #E31E24;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.card__ati {
+    font-size: 18px;
+    color: #E31E24;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card__description {
+    color: rgba(0, 0, 0, .7);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card__link {
+    color: #E31E24;
+    font-weight: 500;
+}
+
+.footer {
+    background-image: url('/img/footer_bg.png');
+    color: #FFFFFF;
+}
+
+.footer__container {
+    padding: 40px;
+}
+
+.footer__top {
+    border-bottom: 5px solid #E31E24;
+}
+
+.footer__bottom {
+}
+
+.footer__text {
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, .85);
+}
+
+.footer__text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer__text span {
+    color: #E31E24;
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+}
+
+.footer__col {
+    width: 25%;
+}
+
+.footer__logo {
+    max-width: 80px;
+}
+
+.footer__content {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.therm {
+    padding: 40px 80px;
+    border-radius: 40px;
+    background-color: #FFF;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.therm__values, .therm__values2 {
+    display: flex;
+}
+
+.therm__value {
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+}
+
+.therm__line {
+    margin: 10px 0;
+    height: 40px;
+}
+
+.therm__line span {
+    transition: all .3s ease;
+    display: inline-block;
+    height: 40px;
+}
+
+.therm__line span.gray {
+    background-color: #666;
+}
+
+.therm__line span.main {
+    background-color: #E31E24;
+    padding: 0;
+}
