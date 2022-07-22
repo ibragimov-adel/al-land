@@ -4,37 +4,37 @@
 
 @font-face {
     font-family: 'AGLettericaExtra';
-    src: url("/fonts/AGLettericaExtra.ttf");
+    src: url("../fonts/AGLettericaExtra.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'PDFinText';
-    src: url("/fonts/PFDinTextCompPro-Regular.ttf");
+    src: url("../fonts/PFDinTextCompPro-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'PDFinText';
-    src: url("/fonts/PFDinTextCompPro-Light.ttf");
+    src: url("../fonts/PFDinTextCompPro-Light.ttf");
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'PDFinText';
-    src: url("/fonts/PFDinTextCompPro-Bold.ttf");
+    src: url("../fonts/PFDinTextCompPro-Bold.ttf");
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'PDFinText';
-    src: url("/fonts/PFDinTextCompPro-Medium.ttf");
+    src: url("../fonts/PFDinTextCompPro-Medium.ttf");
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'PDFinText';
-    src: url("/fonts/PFDinTextCompPro-XBlack.ttf");
+    src: url("../fonts/PFDinTextCompPro-XBlack.ttf");
     font-weight: 900;
 }
 
@@ -65,8 +65,7 @@ ul {
 
 .header {
     padding: 20px 0;
-    /*background-image: url('/img/header_bg.png');*/
-    background-image: url('https://ibragimov-adel.github.io/img/header_bg.png');
+    background-image: url('../img/header_bg.png');
     border-bottom: 5px solid #E31E24;
 }
 
@@ -268,8 +267,7 @@ ul {
 }
 
 .footer {
-    /*background-image: url('/img/footer_bg.png');*/
-    background-image: url('https://ibragimov-adel.github.io/img/footer_bg.png');
+    background-image: url('../img/footer_bg.png');
     color: #FFFFFF;
 }
 
