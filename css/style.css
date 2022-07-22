@@ -3,15 +3,47 @@
 }
 
 @font-face {
-    font-family: 'AGLetterica';
+    font-family: 'AGLettericaExtra';
     src: url("/fonts/AGLettericaExtra.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PDFinText';
+    src: url("/fonts/PFDinTextCompPro-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PDFinText';
+    src: url("/fonts/PFDinTextCompPro-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'PDFinText';
+    src: url("/fonts/PFDinTextCompPro-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PDFinText';
+    src: url("/fonts/PFDinTextCompPro-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'PDFinText';
+    src: url("/fonts/PFDinTextCompPro-XBlack.ttf");
+    font-weight: 900;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 130%;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'PDFinText', sans-serif;
+    line-height: 1;
 }
 
 img {
@@ -82,7 +114,7 @@ ul {
     background: linear-gradient(90deg, rgba(227,30,36,1) 0%, rgba(255,201,203,1) 16%, rgba(227,30,36,1) 100%);
     padding: 10px;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 36px;
     font-weight: 900;
     box-shadow: 5px 5px 0 rgba(0, 0, 0, .5);
     margin-bottom: 5px;
@@ -93,8 +125,8 @@ ul {
 .list-wears__list li {
     border: 1px solid rgba(0, 0, 0, .5);
     padding: 5px;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 24px;
     cursor: pointer;
     transition: background .3s ease;
 }
@@ -136,19 +168,29 @@ ul {
 }
 
 .ati__temp-key {
-    font-size: 24px;
+    font-size: 36px;
     text-align: end;
+    line-height: 1;
 }
 
 .ati__temp-eq {
-    font-size: 24px;
+    font-size: 36px;
     padding: 0 10px;
 }
 
 .ati__temp-value {
-    font-size: 96px;
+    font-size: 120px;
     font-weight: bold;
-    width: 210px;
+    width: 160px;
+    height: 160px;
+    background: rgb(227,30,36);
+    background: radial-gradient(circle, rgba(227,30,36,1) 0%, rgba(255,132,132,1) 50%, rgba(227,30,36,1) 100%, rgba(227,30,36,1) 303030%);
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
 }
 
 .choice__title-wrapper {
@@ -173,7 +215,7 @@ ul {
 .choice__title {
     display: inline-block;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 56px;
     font-weight: 900;
     padding: 0 60px;
     position: relative;
@@ -187,7 +229,7 @@ ul {
 
 .choice__col {
     width: 33.3%;
-    padding: 0 100px;
+    padding: 0 50px;
 }
 
 .card {}
@@ -195,19 +237,19 @@ ul {
 .card__title {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 5px;
 }
 
 .card__name {
-    font-size: 20px;
+    font-size: 28px;
     color: #E31E24;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 .card__ati {
-    font-size: 18px;
+    font-size: 22px;
     color: #E31E24;
     font-weight: 500;
     margin-bottom: 20px;
@@ -215,13 +257,14 @@ ul {
 
 .card__description {
     color: rgba(0, 0, 0, .7);
-    font-size: 14px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
 .card__link {
     color: #E31E24;
     font-weight: 500;
+    font-size: 22px;
 }
 
 .footer {
