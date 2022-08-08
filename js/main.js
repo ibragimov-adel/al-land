@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
         state[type] = value;
 
         renderATI(current);
-        renderCard(type);
+        renderCard(type, value);
         renderTherm();
     }
 
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function renderCard(type) {
+    function renderCard(type, value) {
         let card;
 
         switch (type) {
@@ -215,6 +215,14 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'underwear':
                 card = underwearCard;
                 break;
+        }
+
+        if (value.name === 'Без костюма') {
+            card.querySelector('.card__not-selected').classList.remove('hidden');
+            card.querySelector('.card__content').classList.add('hidden');
+        } else {
+            card.querySelector('.card__content').classList.remove('hidden');
+            card.querySelector('.card__not-selected').classList.add('hidden');
         }
 
         card.querySelector('.card__name').innerText = state[type].name;
