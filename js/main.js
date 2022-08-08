@@ -120,6 +120,14 @@ document.addEventListener('DOMContentLoaded', () => {
     fillList('fleece', fleecesList, fleeces);
     fillList('underwear', underwearsList, underwears);
 
+    suitsList.parentElement.querySelector('.list-wears__selected').addEventListener('click', () => suitsList.style.display = 'block');
+    fleecesList.parentElement.querySelector('.list-wears__selected').addEventListener('click', () => fleecesList.style.display = 'block');
+    underwearsList.parentElement.querySelector('.list-wears__selected').addEventListener('click', () => underwearsList.style.display = 'block');
+
+    suitsList.addEventListener('click', () => suitsList.style.display = 'none');
+    fleecesList.addEventListener('click', () => fleecesList.style.display = 'none');
+    underwearsList.addEventListener('click', () => underwearsList.style.display = 'none');
+
     function fillList(type, list, data) {
         data.forEach(function (item) {
             const li = document.createElement('li');
