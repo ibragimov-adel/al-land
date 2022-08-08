@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
         }
 
-        if (value.name === 'Без костюма') {
+        if (value.name === 'Без костюма' || value.name === 'Без флиса' || value.name === 'Без термобелья') {
             card.querySelector('.card__not-selected').classList.remove('hidden');
             card.querySelector('.card__content').classList.add('hidden');
         } else {
