@@ -76,7 +76,7 @@ ul {
 .header {
     padding: 20px 0;
     background-image: url('../img/header_bg.png');
-    border-bottom: 5px solid #f00912;
+    border-bottom: 5px solid #c90008;
 }
 
 .header__container {
@@ -143,7 +143,7 @@ ul {
 
 .list-wears__header {
     background: rgb(227,30,36);
-    background: linear-gradient(90deg, #f00912 0%, rgb(252, 122, 125) 16%, #f00912 100%);
+    background: linear-gradient(90deg, #c90008 0%, rgb(252, 122, 125) 16%, #c90008 100%);
     padding: 10px;
     text-transform: uppercase;
     font-size: 36px;
@@ -237,7 +237,7 @@ ul {
 .ati__temp {
     display: flex;
     align-items: center;
-    color: #f00912;
+    color: #c90008;
 }
 
 .ati__temp-key {
@@ -257,7 +257,7 @@ ul {
     width: 160px;
     height: 160px;
     background: rgb(227,30,36);
-    background: radial-gradient(circle, #f00912 0%, rgb(255, 102, 102) 50%, #f00912 100%, #f00912 303030%);
+    background: radial-gradient(circle, #c90008 0%, rgb(255, 102, 102) 50%, #c90008 100%, #c90008 303030%);
     text-align: center;
     border-radius: 50%;
     display: flex;
@@ -331,7 +331,7 @@ ul {
     top: 50%;
     transform: translate(0, -50%);
     width: 100%;
-    background-color: #f00912;
+    background-color: #c90008;
     display: block;
 }
 
@@ -403,14 +403,14 @@ ul {
 
 .card__name {
     font-size: 28px;
-    color: #f00912;
+    color: #c90008;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 .card__ati {
     font-size: 22px;
-    color: #f00912;
+    color: #c90008;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -422,7 +422,7 @@ ul {
 }
 
 .card__link {
-    color: #f00912;
+    color: #c90008;
     font-weight: 500;
     font-size: 22px;
 }
@@ -453,7 +453,7 @@ ul {
 }
 
 .footer__top {
-    border-bottom: 5px solid #f00912;
+    border-bottom: 5px solid #c90008;
 }
 
 .footer__bottom {
@@ -472,7 +472,7 @@ ul {
 }
 
 .footer__text span {
-    color: #f00912;
+    color: #c90008;
 }
 
 .footer__row {
@@ -537,6 +537,6 @@ ul {
 }
 
 .therm__line span.main {
-    background-color: #f00912;
+    background-color: #c90008;
     padding: 0;
 }
