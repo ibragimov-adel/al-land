@@ -108,7 +108,7 @@ ul {
 }
 
 .wears {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 640px) {
@@ -219,7 +219,7 @@ ul {
 }
 
 .ati {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .ati__container {
@@ -336,6 +336,22 @@ ul {
         display: flex;
         justify-content: center;
     }
+}
+
+.welcome-text {
+    font-size: 28px;
+    padding: 60px 0;
+}
+
+@media (max-width: 576px) {
+    .welcome-text {
+        font-size: 22px;
+        padding: 20px 0;
+    }
+}
+
+.welcome-text__container {
+    max-width: 1200px;
 }
 
 .choice__title-wrapper {

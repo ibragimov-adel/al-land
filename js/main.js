@@ -104,6 +104,8 @@ const state = {
     suit: null, underwear: null, fleece: null
 };
 
+let isAppStarted = false;
+
 document.addEventListener('DOMContentLoaded', () => {
     const suitsList = document.querySelector('#suit-list');
     const fleecesList = document.querySelector('#fleece-list');
@@ -149,6 +151,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function changeState(type, value) {
+        if (!isAppStarted) {
+            isAppStarted = true;
+            document.querySelector('.ati').classList.remove('hidden');
+            document.querySelector('.welcome-text').classList.add('hidden');
+        }
+
         const current = getTotalATI();
 
         state[type] = value;
